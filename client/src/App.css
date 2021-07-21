@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'Countryside';
+  font-size: '1.99rem';
+  src: local('Countryside'), url(./fonts/CountrysideRegular.ttf) format('truetype');
+}
