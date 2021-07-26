@@ -3,7 +3,9 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
+
 import postRoutes from './routes/posts.js';
+import userRoutes from './routes/users.js';
 
 // app initialisation
 const app = express();
@@ -16,9 +18,10 @@ app.use(cors());
 
 // setup every postRoute to start from /posts
 app.use('/posts', postRoutes);
+app.use('/user', userRoutes);
 
 app.get('/', (req, res) => {
-    res.send('Hello to Echoes API');
+    res.send('Welcome to Echoes API');
 })
 
 const CONNECTION_URL = process.env.CONNECTION_URL;
