@@ -70,7 +70,7 @@ const Auth = () => {
     };
     
     const googleFailure = () => {
-        console.log('Google Sign In failure. Try Again Later')
+        alert('Google Sign In failure. Try Again Later.')
     };
 
 
