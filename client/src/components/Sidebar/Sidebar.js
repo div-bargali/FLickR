@@ -1,7 +1,6 @@
 import React from 'react';
-import { Typography, Paper, Container } from '@material-ui/core';
+import { Typography, Paper, Container, Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-
 import useStyles from './styles';
 
 const Sidebar = () => {
@@ -18,9 +17,12 @@ const Sidebar = () => {
                         To continue using Echoes 
                     `}
                 </Typography>
-                <Typography>
+                {/* <Typography>
                     <Link to="/auth">Sign In</Link>
-                </Typography>
+                </Typography> */}
+                <Button component={Link} to="/auth" variant="contained" color="success" fullWidth>
+                    Sign In
+                </Button>
             </Container>
         </Paper>
     );
