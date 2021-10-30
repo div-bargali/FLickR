@@ -7,6 +7,10 @@ import useStyles from './styles';
 // import memories from '../../images/memories.png';
 import echoesLogo from '../../images/echoes-Logo.png'
 import echoesText from '../../images/echoes-Text.png'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 const Navbar = () => {
     const classes = useStyles();
@@ -39,8 +43,12 @@ const Navbar = () => {
         
     }, [location]);
 
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, []);
+
     return (
-    <AppBar className={classes.appBar} position="static" color="inherit">
+    <AppBar className={classes.appBar} position="static" color="inherit" data-aos='zoom-in'>
         <Link to="/" className={classes.brandContainer}>
             <img src={echoesText} alt="icon" height="50px" />
             <img className={classes.image} src={echoesLogo} alt="icon" height="45px" />
@@ -62,6 +70,8 @@ const Navbar = () => {
                 <Button component={Link} to="/auth" variant="contained" color="primary">
                     Sign In
                 </Button>
+
+ 
             )}
         </Toolbar>
     </AppBar>
@@ -69,3 +79,7 @@ const Navbar = () => {
 }
 
 export default Navbar;
+
+               /* <Button component={Link} to="/auth" variant="contained" color="primary">
+                    Sign In
+                </Button> */

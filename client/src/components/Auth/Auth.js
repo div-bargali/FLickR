@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Avatar, Button, Paper, Typography, Grid, Container } from '@material-ui/core';
 import { GoogleLogin } from 'react-google-login';
 import { useDispatch } from 'react-redux';
@@ -10,6 +10,9 @@ import dotenv from 'dotenv';
 import useStyles from './styles';
 import Input from './Input';
 import { signin, signup } from '../../actions/auth';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 dotenv.config();
 
@@ -73,9 +76,12 @@ const Auth = () => {
         alert('Google Sign In failure. Try Again Later.')
     };
 
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, []);
 
     return (
-        <Container component="main" maxWidth="xs" >
+        <Container component="main" maxWidth="xs" data-aos='zoom-in'>
             <Paper className={classes.paper} elevation={3}>
                 <Avatar className={classes.avatar}>
                     <LockOutlinedIcon />
