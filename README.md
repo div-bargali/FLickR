@@ -10,11 +10,11 @@ Echoes application build in node-js runtime environment and react library
 
 ## Mocks
 
+![View of Dashboard Page](./screenshots/HomePage.jpg)
 ![View of Login Page](./screenshots/Login.png)
 ![View of Signup Page](./screenshots/Signup.png)
-![View of Dashboard Page](./screenshots/Dashboard.png)
 
-## 3rd party dependencies
+## Dependencies
 
 - react-redux
 - moment
