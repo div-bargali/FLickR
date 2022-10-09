@@ -6,10 +6,9 @@ import decode from 'jwt-decode';
 import useStyles from './styles';
 // import memories from '../../images/memories.png';
 import echoesLogo from '../../images/echoes-Logo.png'
-import echoesText from '../../images/echoes-Text.png'
+import echoesText from '../../images/echoes-Text.jpg'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-
 
 
 const Navbar = () => {
