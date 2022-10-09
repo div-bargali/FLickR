@@ -13,8 +13,8 @@ const Sidebar = () => {
                 
                 <Typography variant="body1" align="center">
                     {`
-                        You are currently not signed in.
-                        To continue using Echoes 
+                        You are currently not signed in. \n\n
+                        Sign In to continue using Flickr 
                     `}
                 </Typography>
                 {/* <Typography>
