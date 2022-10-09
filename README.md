@@ -11,7 +11,7 @@ Flickr application build in node-js runtime environment and react library
 ## Mocks
 
 ![View of Dashboard Page](./screenshots/HomePage.jpg)
-![View of Login Page](./screenshots/SignIn.png)
+![View of Login Page](./screenshots/SignIn.jpg)
 
 ## Dependencies
 
