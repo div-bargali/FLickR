@@ -1,6 +1,6 @@
-# Echoes App Server
+# Flickr
 
-Echoes application build in node-js runtime environment and react library
+Flickr application build in node-js runtime environment and react library
 
 ## Feature
 
