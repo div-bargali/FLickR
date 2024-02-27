@@ -1,4 +1,4 @@
-# Flickr
+# FlickR
 
 Flickr application build in node-js runtime environment and react library
 
